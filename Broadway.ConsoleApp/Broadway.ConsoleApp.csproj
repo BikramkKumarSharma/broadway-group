@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractClass\Animal.cs" />
+    <Compile Include="Delegates\Button.cs" />
+    <Compile Include="Extension\StringExtension.cs" />
+    <Compile Include="Interface\Interface1.cs" />
+    <Compile Include="Interface\IShape.cs" />
+    <Compile Include="SchoolModule\Marks.cs" />
     <Compile Include="Subject\abstract.cs" />
     <Compile Include="Subject\Interface.cs" />
     <Compile Include="Subject\Math.cs" />
@@ -53,5 +59,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
