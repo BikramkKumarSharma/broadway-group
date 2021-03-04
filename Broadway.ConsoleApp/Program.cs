@@ -12,21 +12,26 @@ namespace Broadway.ConsoleApp
         static void Main(string[] args)
         {
             //MathOps();
-            //MathPart2();
+            //mathpart2();
 
-            //InheritenceExample();
-            //StaticAndNonStaticExample();
+            //inheritenceexample();
+            //staticandnonstaticexample();
 
-            //TypeDefs();
-            //ArrayExample();
-            //ListExample();
+            //typedefs();
+            //arrayexample();
+            //listexample();
 
-            StudentModelExample();
+            //StudentModelExample();
+            heymar();
+           // Hello();
 
-            Console.ReadLine();
+            Console.ReadKey();
         }
 
-        
+        private static void heymar()
+        {
+            ;
+        }
 
         public static void MathOps()
         {
@@ -66,7 +71,7 @@ namespace Broadway.ConsoleApp
             //t.FunctionOne();
             //lt.FunctionOne();
             //lt2.FunctionOne();
-            
+
             //Console.WriteLine(t.ToString());
         }
 
@@ -75,10 +80,10 @@ namespace Broadway.ConsoleApp
             SNS s1 = new SNS();
             Console.WriteLine(s1.ToString());
 
-           
+
         }
 
-                static SNS newObj;
+        static SNS newObj;
         static void TypeDefs()
         {
             try
@@ -97,7 +102,7 @@ namespace Broadway.ConsoleApp
             }
             catch (Exception e)
             {
-                Console.WriteLine("Message : "+e.Message);
+                Console.WriteLine("Message : " + e.Message);
             }
         }
 
@@ -112,7 +117,7 @@ namespace Broadway.ConsoleApp
             arr[4] = 1;
 
             Array.Resize(ref arr, 4);
-            
+
 
             Console.WriteLine("");
         }
@@ -161,15 +166,15 @@ namespace Broadway.ConsoleApp
         {
             get
             {
-                if (Percentage<0 || Percentage >100)
+                if (Percentage < 0 || Percentage > 100)
                 {
                     return "Invalid Percentange";
                 }
-                else if(Percentage>80)
+                else if (Percentage > 80)
                 {
                     return "Distinction";
                 }
-                else if (Percentage>60)
+                else if (Percentage > 60)
                 {
                     return "First";
                 }
@@ -190,11 +195,11 @@ namespace Broadway.ConsoleApp
     {
         public int i = 10;
         public string Name = "NewName";
-       
+
         public void IncreaseAndDisplay()
         {
             i++;
-           
+
             Console.WriteLine($"Value of i = {i}");
         }
 
@@ -204,4 +209,12 @@ namespace Broadway.ConsoleApp
         }
     }
 
+    //public static void Hello()
+    //{
+    //    Pig myPig = new Pig(); // Create a Pig object
+    //    myPig.animalSound();  // Call the abstract method
+    //    myPig.sleep();  // Call the regular method
+    //}
 }
+
+        
